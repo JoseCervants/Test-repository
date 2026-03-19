@@ -1,0 +1,205 @@
+/* By default show light */
+.dark-btn .dark-mode { display: flex; }
+.dark-btn .light-mode { display: none; }
+
+/* When active (dark mode on) */
+.dark-btn.active .dark-mode { display: none; }
+.dark-btn.active .light-mode { display: flex; }
+
+/* Example dark theme */
+body.dark-theme {
+    background: #0e0e0f !important;
+
+    
+
+    .border-gray-100,.border-gray-200 {
+        border-color: $gray-900 !important;
+    }
+    .border-gray-300,.border-gray-400 {
+        border-color: $gray-700 !important;
+    }
+    
+
+    .text-gray-500,.text-gray-600 {
+        color: $gray-500 !important;
+    }
+    .text-gray-900,.text-gray-800,.text-gray-700 {
+        color: $gray-100 !important;
+    }
+
+    .bg-gray-100 {
+        background: transparent !important;
+    }
+    .bg-image-none-dark,
+    .feature-wrap {
+        background-image: none !important;
+    }
+    .header-wrapper .logo_dark {
+        display: flex;
+    }
+    .header-wrapper .logo_light {
+        display: none;
+    }
+    .header-wrapper .navbar .dark-btn,
+    .header-wrapper.scroll-header .navbar .dark-btn {
+        background: $gray-800 !important;
+        border:transparent !important;
+        color: $gray-200 !important;
+    }
+
+    .header-wrapper.scroll-header .nav-logo-light,
+    .header-wrapper .nav-logo-light {
+        display: flex !important;
+    }
+    .header-wrapper.scroll-header .nav-logo-dark,
+    .header-wrapper .nav-logo-dark {
+        display: none !important ;
+    }
+    .navbar .navbar-nav .nav-item .sub-menu,
+    .navbar .navbar-nav .nav-item .mega-menu {
+        background: #1c1c1e !important;
+        
+    }
+    .shop-single .product-info p,
+    .shop-single .product-des,
+    .shop-wrap .product-price,
+    .shop-wrap .product-tag,
+    .form-label,
+    .shop-wrap .product-title,
+    .btn-outline,
+    .nav-link,
+    .mega-menu-header,
+    .menu-item-text {
+        color: #fff !important;
+    }
+
+    .navbar .navbar-nav .nav-item .mega-menu .mega-menu-sub a {
+        color: $gray-200 !important;
+    }
+    .search-wrap {
+        background: #0e0e0f !important;
+        border: 0 !important;
+        .form-control-lg {
+            background: #0e0e0f !important;
+        }
+    }
+    .bg-light,
+    .bg-white,
+    .bg-gradient-home-banner,
+    .header-wrapper.scroll-header,
+    .bg-gray-100,
+    .bg-gray-200,
+    .bg-gray-300,
+    .bg-gray-400,
+    .bg-gray-500,
+    .bg-gray-600,
+    .bg-gray-700,
+    .bg-gray-800,
+    .bg-gray-900,
+    .bg-dark-gray2,
+    .bg-lightbrown,
+    .bg-lightbrown2,
+    .bg-lightgreen,
+    .accordion,
+    .accordion-item,
+    
+    .feature-wrap {
+        background: #1c1c1e !important;
+    }
+    .bg-deepbrown,
+    .bg-lightbrown3,
+    .bg-deepgreen,
+    .nav-tabs-outline .nav-link:hover, 
+    .nav-tabs-outline .nav-link.active,
+    .bg-dark-gray {
+        background: #0e0e0f !important;
+    }
+    .bg-dark-black {
+        background-color: #000 !important;
+    }
+    .slider-bg-progress .splide__slide:after {
+        background: $gray-800 !important;
+    }
+    .btn.bg-light3 {
+        color: $gray-900 !important;
+    }
+    .btn.bg-light,
+    .btn.bg-gray-900 {
+        background: $gray-100 !important;
+        color: $gray-900 !important;
+    }
+    .btn.bg-deepyellow,
+    .btn.bg-light,
+    .btn.bg-darkgreen {
+        color: $gray-900 !important;
+        svg {
+            color: $gray-900 !important;
+        }
+    }
+    .form-select,
+    .form-control,
+    thead, tbody, tfoot, tr, td, th {
+        background: #0e0e0f !important;
+        border-color: $gray-800 !important;
+        color: $gray-200 !important;
+    }
+    .footer-wrap .logo .nav-logo-light {
+        display: flex;
+    }
+    .footer-wrap .logo .nav-logo-dark {
+        display: none;
+    }
+    .footer-wrap .footer-link.text-gray-900 a,
+    footer {
+        color: $gray-100;
+    }
+    .footer-wrap .social-link li a {
+        background: $gray-800 !important;
+    }
+    .light-footer .separator-line {
+        border-color: $gray-900 !important;
+    }
+
+    .diagram-svg {
+        opacity: 0.3;
+    }
+    .contact-form-wrap .form-control {
+        background: $gray-800 !important;
+        border:0 !important;
+    }
+    .vertical-sldier span.bg-white {
+        background: $gray-800 !important;
+    }
+    .text-dark-white {
+        color: $gray-100 !important;
+    }
+    .text-dark-gray {
+        color: $gray-900 !important;
+    }
+    
+    .light-blue-banner {
+        background: radial-gradient(circle farthest-corner at 130% 110%, black 15%, transparent 37%),
+        linear-gradient(50deg, transparent 70%, rgba(0, 0, 0, 0.8) 93%),
+        linear-gradient(100deg, black 12%, transparent 30%),
+        linear-gradient(0deg, black, transparent 85%),
+        radial-gradient(circle at -20% -40%, transparent 8%, rgba(77, 166, 255, 0.3) 33%, transparent 68%),
+        repeating-linear-gradient(210deg, transparent, rgba(0, 0, 0, 0.3) 18%, transparent 50%),
+        repeating-linear-gradient(195deg, transparent 55%, rgba(77, 166, 255, 0.25) 66%, transparent 85%)
+    }
+    .bg-gradient-light-deepblue2:after,
+    .bg-gradient-darklight {
+        background:linear-gradient(to bottom, $gray-800, $gray-900) !important;
+    }
+    .bg-gradient-light-white,
+    .shop-wrap .shop-image a .img-one, .shop-wrap .shop-image a .img-two,
+    .bg-gradient-gray-100-200,
+    .bg-gradient-white-light {
+        background: linear-gradient(to bottom, #242424, #000);
+    }
+
+    .brand-logo-dark {display: flex;}
+    .brand-logo-light {display: none;}
+    .load-btn-absolute {
+        background: linear-gradient(to bottom,rgba(232,245,255,.0),rgba(0,0,0,.7),#0e0e0f);
+    }
+}

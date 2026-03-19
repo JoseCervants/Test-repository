@@ -1,0 +1,360 @@
+.hero-wrapper {
+    height: 95vh;
+    @include media-breakpoint-down(xl) {
+        height: 800px;
+    }
+    @include media-breakpoint-down(lg) {
+        height: auto;
+        padding-top: 130px;
+        padding-bottom: 80px;
+    }
+    @include media-breakpoint-down(md) {
+        height: auto;
+        padding-top: 110px;
+        padding-bottom: 60px;
+    }
+}
+.banner-wrapper {
+    height: 93vh;
+    padding-top: 90px;
+    @include media-breakpoint-down(xxxl) {
+        height: 770px;
+    }
+    @include media-breakpoint-down(xxl) {
+        height: 690px;
+    }
+    @include media-breakpoint-down(lg) {
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+}
+.banner-wrapper-image {
+    width: 54%;
+    right:0;
+    @include media-breakpoint-down(xxxl) {
+        width: 60%;
+    }
+    @include media-breakpoint-down(xxl) {
+        width: 60%;
+    }
+    @include media-breakpoint-down(xl) {
+        width: 74%;
+        right:-15%;
+    }
+    @include media-breakpoint-down(lg) {
+        display: none;
+    }
+}
+.startup-banner {
+    background-image: url(../images/banner-bg-8.webp);
+    @include media-breakpoint-down(md) {
+        background: radial-gradient(circle at 20% 20%, rgba(255, 140, 0, 0.2) 0%, transparent 60%),
+            radial-gradient(circle at 80% 10%, rgba(255, 165, 0, 0.25) 0%, transparent 50%),
+            radial-gradient(circle at 0% 100%, rgba(255, 120, 0, 0.2) 0%, transparent 60%),
+            #1a1a1a; 
+    }
+}
+.agency-banner {
+    background-image: url(../images/banner-bg-1.webp);
+    @include media-breakpoint-down(md) {
+        background: radial-gradient(circle at bottom left, rgba(46, 169, 177, 0.4) 0%, rgba(14, 61, 66, 1) 50%, #0e3d42 100%);
+    }
+}
+.tech-banner {
+    background-image: url(../images/banner-bg-2.webp);
+    background-position: center right;
+    height: 80vh;
+    @include media-breakpoint-down(xl) {
+        // background-position: center left;
+        height: auto;
+    }
+    @include media-breakpoint-down(lg) {
+        background-position: center left;
+        height: auto;
+    }
+    @include media-breakpoint-down(md) {
+        background: 
+        radial-gradient(circle at bottom left, #064d00 0%, #032c00 40%, transparent 80%),
+        radial-gradient(circle at top right, #011900 0%, #032c00 60%, #010f00 100%);
+        background-color: #032c00;
+    }
+}
+.analytics-banner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.analytics-banner:after {
+    content: '';
+    height: 75%;
+    background-image: url(../images/home-9-hero.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    position: absolute;
+    left: 0;
+    top:0;
+    border-radius: 12px;
+    @include media-breakpoint-down(lg) {
+            background: radial-gradient(circle at 50% 10%, #c7d8ff 0%, #eef3ff 70%),
+            radial-gradient(circle at 20% 80%, rgba(150,180,255,0.8) 0%, transparent 70%),
+            radial-gradient(circle at 80% 80%, rgba(150,180,255,0.8) 0%, transparent 70%);
+            filter: blur(2px);
+    }
+}
+.analytics-banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+.light-blue-banner {
+    background:
+        radial-gradient(circle farthest-corner at 130% 110%, #ffffff 15%, #ffffff00 37%),
+        linear-gradient(50deg, #ffffff00 70%, #ffffffcc 93%),
+        linear-gradient(100deg, #ffffff 12%, #ffffff00 30%),
+        linear-gradient(0deg, #ffffff, #ffffff00 85%),
+        radial-gradient(circle at -20% -40%, #ffffff00 8%, #add8e066 33%, #ffffff00 68%),
+        repeating-linear-gradient(210deg, #ffffff00, #e6f7ff4d 18%, #ffffff00 50%),
+        repeating-linear-gradient(195deg, #ffffff00 55%, #4da6ff4d 66%, #ffffff00 85%);
+}
+.dark-banner {
+    background-image: url(../images/img/banner-bg-8.webp);
+    height: 900px;
+    background-position: center;
+    @include media-breakpoint-down(md) {
+        background: 
+        radial-gradient(circle at bottom left, #064d00 0%, #032c00 40%, transparent 80%),
+        radial-gradient(circle at top right, #011900 0%, #032c00 60%, #010f00 100%);
+        background-color: #032c00;
+    }
+}
+.data-analytics-banner {
+    background-image: url(../images/img/banner-bg-7.webp);
+    height: 95vh;
+    background-position: center;
+    margin:10px;
+    @include media-breakpoint-down(lg) {
+        height: 60vh;
+    }
+}
+.fintech-analytics-banner {
+    background-image: url(../images/img/banner-bg-8.webp);
+    height: 95vh;
+    background-position: center;
+    padding-top: 110px;
+    padding-bottom: 60px;
+    @include media-breakpoint-down(lg) {
+        height: auto;
+    }
+}
+.banner-top {
+    padding-top: 125px;
+    @include media-breakpoint-down(lg) {
+        padding-top: 80px;
+    }
+}
+.word-slider {
+    display: inline-block;
+    height: 1.25em;
+    overflow: hidden;
+    
+    vertical-align: middle;
+    
+    mask-image: linear-gradient(transparent, white, white, white, transparent);
+    mask-type: luminance;
+    mask-mode: alpha;
+    &__words {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        list-style: none;        
+        animation-name: wordSlider;
+        animation-timing-function: ease-out;
+        animation-iteration-count: infinite;
+        animation-duration: 7s;
+    }
+    
+    &__word {
+        display: block;
+        line-height: 1.1em;
+        text-align: left;
+    }
+}
+
+.word-slider {
+    display: inline-block;
+    height: 1.25em;
+    overflow: hidden;
+    vertical-align: middle;
+    -webkit-mask-image: linear-gradient(transparent, white, white, white, transparent);
+            mask-image: linear-gradient(transparent, white, white, white, transparent);
+    mask-type: luminance;
+    mask-mode: alpha;
+}
+.word-slider__words {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-animation-name: wordSlider;
+            animation-name: wordSlider;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+}
+.word-slider__word {
+    display: block;
+    line-height: 1.1em;
+    text-align: left;
+}
+
+@-webkit-keyframes wordSlider {
+    0%, 27% {
+        transform: translateY(0%);
+    }
+    33%, 60% {
+        transform: translateY(-25%);
+    }
+    66%, 93% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(-75%);
+    }
+    }
+
+@keyframes wordSlider {
+    0%, 27% {
+        transform: translateY(0%);
+    }
+    33%, 60% {
+        transform: translateY(-25%);
+    }
+    66%, 93% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(-75%);
+    }
+}
+.hero-icon-1 {
+    position: absolute;
+    left:30%;
+    top:22%;
+    animation: scale-loading 2s linear 1s infinite;
+}
+.hero-icon-2 {
+    position: absolute;
+    left:25%;
+    bottom:22%;
+    animation: scale-loading 2s linear infinite;
+}
+.hero-icon-3 {
+    position: absolute;
+    right:30%;
+    top:17%;
+    animation: scale-loading 2s linear 1s infinite;
+}
+.hero-icon-4 {
+    position: absolute;
+    right:25%;
+    bottom:25%;
+    animation: scale-loading 2s linear infinite;
+}
+.hero-icon-5 {
+    position: absolute;
+    left:12%;
+    top:35%;
+    animation: rotate-loading 2s linear infinite;
+}
+.hero-icon-6 {
+    position: absolute;
+    right:15%;
+    bottom:47%;
+    animation: rotate-loading 2s linear infinite;
+}
+.load-btn-absolute {
+    position: absolute;
+    bottom:0;
+    left:0;
+    height: 200px;
+    background: linear-gradient(to bottom, rgba(232, 245, 255, 0.1),rgba(232, 245, 255, 0.7), rgba(232, 245, 255, 1));   
+}
+.finance-agency .feature-1 {
+    position: absolute;
+    top: 70px;
+    left:3%;
+    height: 100px;
+    @include media-breakpoint-down(xl) {
+        height: 70px;
+        left:7%;
+    }
+    @include media-breakpoint-down(lg) {
+        left:0;
+    }
+}
+.finance-agency .feature-2 {
+    position: absolute;
+    bottom: 70px;
+    left:15%;
+    height: 200px;
+    @include media-breakpoint-down(xl) {
+        height: 140px;
+    }
+    @include media-breakpoint-down(lg) {
+        left:10%;
+    }
+}
+.finance-agency .feature-3 {
+    position: absolute;
+    top: 70px;
+    right:17%;
+    height: 120px;
+    @include media-breakpoint-down(xl) {
+        height: 70px;
+    }
+}
+.finance-agency .feature-4 {
+    position: absolute;
+    bottom: 70px;
+    right:13%;
+    height: 220px;
+    @include media-breakpoint-down(xl) {
+        height: 170px;
+    }
+    @include media-breakpoint-down(lg) {
+        right:5%;
+    }
+    
+}
+.app-skin {
+    @include media-breakpoint-down(xl) {
+        width: 200px;
+    }
+}
+.border-white-40 {
+    border-color: rgba(255, 255, 255, 0.4) !important;
+}
+.card-sticky-wrap {
+    width: 100%;
+    // max-width: ;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(var(--cards-count), var(--card-height));
+    gap: 20px;
+}
+.card-sticky {
+    position: sticky;
+    top:100px;
+}
+
+.card-sticky-inner {
+    will-change: transform;
+}
